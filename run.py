@@ -6,7 +6,7 @@ SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
-    ]
+]
 
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
@@ -105,7 +105,7 @@ def get_last_5_entries_sales():
 
 def main():
     """
-    Runn all program functions.
+    Run all program functions.
     """
     data = get_sales_data()
     sales_data = [int(num) for num in data]
